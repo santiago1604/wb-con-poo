@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guerra Civil Imperial</title>
+        <style>
+            h1 {
+                font-size: 70px;
+            }
+            form {
+                color: black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h1 {
+                text-align: center;
+                color: greenyellow;
+            }
+
+            body {
+                background-image: url(https://www.wallpapertip.com/wmimgs/29-291542_space-war-wallpaper-4k.jpg);
+                background-position: downcenter;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+        </style>
+        <link href="WEB-INF/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Guerra Civil Imperiall</h1>
+        <form class="form" action="calcularCombustible.jsp" method="post" align="center" style="width: 2000px; height: 400px;">
+            <label for="parsecs">Parsecs estimados:</label>
+            <input type="number" name="parsecs" id="parsecs">
+            <br>
+            <label for="halcon-milenario-cantidad">Cantidad de Halcon Milenario:</label>
+            <input type="number" name="halcon-milenario-cantidad" id="halcon-milenario-cantidad">
+            <label for="halcon-milenario-personas">Capacidad de personas:</label>
+            <input type="number" name="halcon-milenario-personas" id="halcon-milenario-personas">
+            <label for="halcon-milenario-consumo">Consumo de combustible (L/Parsec):</label>
+            <input type="number" step="0.01" name="halcon-milenario-consumo" id="halcon-milenario-consumo">
+            <br>
+            <label for="destructor-estelar-cantidad">Cantidad de Destructor Estelar:</label>
+            <input type="number" name="destructor-estelar-cantidad" id="destructor-estelar-cantidad">
+            <label for="destructor-estelar-personas">Capacidad de personas:</label>
+            <input type="number" name="destructor-estelar-personas" id="destructor-estelar-personas">
+            <label for="destructor-estelar-consumo">Consumo de combustible (L/Parsec):</label>
+            <input type="number" step="0.01" name="destructor-estelar-consumo" id="destructor-estelar-consumo">
+            <br>
+            <label for="lanzadera-imperial-cantidad">Cantidad de Lanzadera imperial:</label>
+            <input type="number" name="lanzadera-imperial-cantidad" id="lanzadera-imperial-cantidad">
+            <label for="lanzadera-imperial-personas">Capacidad de personas:</label>
+            <input type="number" name="lanzadera-imperial-personas" id="lanzadera-imperial-personas">
+            <label for="lanzadera-imperial-consumo">Consumo de combustible (L/Parsec):</label>
+            <input type="number" step="0.01" name="lanzadera-imperial-consumo" id="lanzadera-imperial-consumo">
+            <br>
+            <label for="supremacy-cantidad">Cantidad de Supremacy:</label>
+            <input type="number" name="supremacy-cantidad" id="supremacy-cantidad">
+            <label for="supremacy-personas">Capacidad de personas:</label>
+            <input type="number" name="supremacy-personas" id="supremacy-personas">
+            <label for="supremacy-consumo">Consumo de combustible (L/Parsec):</label>
+            <input type="number" step="0.01" name="supremacy-consumo" id="supremacy-consumo">
+            <label for="supremacy-naves-transportables">Cantidad de naves transportables:</label>
+            <input type="number" name="supremacy-naves-transportables" id="supremacy-naves-transportables">
+            <br>
+            <label for="at-at-cantidad">Cantidad de AT-AT:</label>
+            <input type="number" name="at-at-cantidad" id="at-at-cantidad">
+            <label for="at-at-personas">Capacidad de personas:</label>
+            <input type="number" name="at-at-personas" id="at-at-personas">
+            <label for="at-at-consumo">Consumo de combustible (L/Parsec):</label>
+            <input type="number" step="0.01" name="at-at-consumo" id="at-at-consumo">
+            <br>
+            <button type="submit">Calcular combustible necesario</button>
+        </form>
+
+    </body>
+</html>
